@@ -1,0 +1,125 @@
+/* main section */
+#bgPicture {
+	background-image: linear-gradient(rgba(30, 18, 4, 0.8), rgba(30, 18, 4, 0.8)), url('../images/fire.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#container2 {
+	/* border: 1px solid red; */
+	max-width: 1000px;
+    min-height: 1000px;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+}
+
+.container {
+	color: #f2f2f2;
+}
+
+.container section#mlevenoMeso {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+
+.container section#beloMesoiSendvici {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+
+.container section#piletina {
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+}
+
+.container section#pica {
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+}
+
+table, td {
+	margin-bottom: 2.5px;
+	max-width: 400px;
+}
+
+thead, tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+td:first-child {
+	min-width: 300px;
+}
+
+td:nth-child(2) {
+	min-width: 50px;
+	font-size: 0.75em;
+}
+
+td:nth-child(3) {
+	min-width: 40px;
+}
+
+table#mainSpace {
+	margin-top: 58px;
+}
+
+@media (max-width: 1000px) {
+	
+	#container2 {
+		min-height: 1500px;
+		font-size: 0.75em;
+		padding: 10px 0 10px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#container2 div {
+		margin: 0 auto;
+	}
+
+	.container section#mlevenoMeso {
+		position: static;
+		display: block;
+	}
+
+	.container section#beloMesoiSendvici {
+		position: static;
+		display: block;
+	}
+
+	.container section#piletina {
+		position: static;
+		display: block;
+	}
+
+	.container section#pica {
+		position: static;
+		display: block;
+	}
+
+	table.space {
+		margin-top: 35px;
+	}
+}
+
+@media (max-width: 520px) {
+	#container2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.75em;
+		padding: 10px 0 10px 10px;
+	}
+
+	td:first-child {
+		min-width: 190px;
+	}
+}
